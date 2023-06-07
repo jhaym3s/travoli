@@ -2,9 +2,13 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:persistent_bottom_nav_bar_v2/persistent-tab-view.dart';
 import 'package:travoli/core/configs/dimensions.dart';
+import 'package:travoli/features/dashboard/favourites/screens/favorite_screen.dart';
+import 'package:travoli/features/dashboard/profile/screens/profile_screen.dart';
 
 import '../../core/configs/constants.dart';
 import '../../core/configs/images.dart';
+import 'addHouse/screens/add_house.dart';
+import 'home/screens/home_screen.dart';
 
 class CustomNavigationBar extends StatefulWidget {
   static const routeName = "custom_nav_bar";
@@ -20,10 +24,10 @@ class _CustomNavigationBarState extends State<CustomNavigationBar> {
 
   List<Widget> _children() {
     return [
-      // HomeScreen(pageController: _pageController,),
-      // const TransactionHistoryScreen(),
-      // const ReportScreen(),
-      // const ProfileScreen(),
+    const HomeScreen(),
+    const FavoriteScreen(),
+    const AddHouseScreen(),
+    const ProfileScreen(),
     ];
   }
 
