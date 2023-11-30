@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
 
+import 'core/configs/configs.dart';
+import 'core/helpers/router/app_route.dart';
+import 'feature/authentication/screens/splash_screen.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -9,12 +13,16 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Travoli',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
-      ),
-      home: Container(),
+      theme: AppTheme().lightTheme,
+       onGenerateRoute: AppRouter.onGenerated,
+      builder: (context, widget){
+            final media = MediaQuery.of(context);
+            Dims.setSize(media);
+            return widget!;
+          },
+      home: const SplashScreen(),
     );
   }
 }

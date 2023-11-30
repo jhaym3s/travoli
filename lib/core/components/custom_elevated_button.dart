@@ -28,7 +28,7 @@ class _CustomElevatedButtonState extends State<CustomElevatedButton> {
       alignment: Alignment.center,
       child: SizedBox(
         width: widget.width!.dx,
-        height: 52.dy,
+        height: 48.dy,
         child: ElevatedButton(
           onPressed: widget.onPressed,
           style: ButtonStyle(

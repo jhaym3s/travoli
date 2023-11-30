@@ -165,7 +165,7 @@ void showOrderAcceptedDialog({required BuildContext context, required VoidCallba
         child: Column(
             children: [
               SpaceY(25.dy),
-              Image.asset(AssetsImages.check, height: 40.dy, width: 40.dx,),
+             // Image.asset(AssetsImages.check, height: 40.dy, width: 40.dx,),
                 SpaceY(4.dy),
                  Text("Order accepted",
                         softWrap: true,

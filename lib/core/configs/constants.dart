@@ -44,7 +44,7 @@ const double kBorderRadius = 10.0;
 const double kBottomNavBarHeight = 60.0;
 
 //! Colors
-const Color kPrimaryColor = Color(0xffF90606);
+const Color kPrimaryColor = Color(0xffF000000);
 const Color lightScaffoldBackgroundColor = kWhite;
 const Color kTextColorsLight = Color(0xFF121619);
 const Color navBarIconsInActiveColor = Color(0xff98A2B3);
