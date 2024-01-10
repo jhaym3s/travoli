@@ -7,7 +7,7 @@ import 'package:flutter/material.dart';
 class Dims {
   const Dims._();
   // the app was designed on an iphone frame with w:h = 375:812
-  static Size designSize = const Size(375, 812);
+  static Size designSize = const Size(390, 844);
   // the device [running the application] size
   static late Size deviceSize;
 
