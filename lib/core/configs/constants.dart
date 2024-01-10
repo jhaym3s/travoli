@@ -7,7 +7,7 @@ import 'package:intl/intl.dart';
 
 // typedef ToolbarOptionModelCallback = void Function(ToolbarOptionModel sortModel);
 
-const String kCompanyName = 'VPay';
+const String kCompanyName = 'Travoli';
 const String kAppVersion = '1.0.0';
 
 /// Default theme font.  LengthLimitingTextInputFormatter(11),
@@ -17,7 +17,8 @@ const String kDummyName = "John Doe";
 const String kDummyPassword = "johndoe#123";
 const String kCurrency = '\u20A6';
 
-const String kFontFamily = "inter";
+const String kFontFamily = "Roboto";
+const String kSecondaryFontFamily = "Lato";
 
 // Date/time formats
 const String kDateFormat = 'dd/MM/yyyy';
@@ -46,7 +47,7 @@ const double kBottomNavBarHeight = 60.0;
 //! Colors
 const Color kPrimaryColor = Color(0xffF000000);
 const Color lightScaffoldBackgroundColor = kWhite;
-const Color kTextColorsLight = Color(0xFF121619);
+const Color kTextColorsLight = Color(0xFF100C08);
 const Color navBarIconsInActiveColor = Color(0xff98A2B3);
 const Color kWhite = Color(0xFFFFFFFF);
 const Color kBlack = Color(0xFF000000);

@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:travoli/core/components/custom_elevated_button.dart';
 import 'package:travoli/core/configs/constants.dart';
+import 'package:travoli/core/helpers/router/router.dart';
+import 'package:travoli/feature/authentication/screens/sign_up_screen.dart';
 
 import '../../../core/configs/configs.dart';
 import '../widget/onboarding_content.dart';
@@ -62,7 +64,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen>
       body: SizedBox(
         child: Column(children: [
       SizedBox(
-        height: kScreenHeight(context).dy - 350.dy,
+        height: kScreenHeight(context).dy - 250.dy,
         child: PageView(
           controller: _pageController,
           onPageChanged: onChangedFunction,
@@ -88,8 +90,10 @@ class _OnBoardingScreenState extends State<OnBoardingScreen>
           ],
         ),
       ),
-        CustomElevatedButton(onPressed:currentIndex==0? skipFunction : (){}, 
-        buttonText: currentIndex==0?"Next":"Get Started"),
+        CustomElevatedButton(onPressed:currentIndex==0? skipFunction : (){
+          moveToNextScreen(context: context, page: SignUpScreen.routeName);
+        }, 
+       buttonText: currentIndex==0?"Next":"Get Started"),
       SpaceY(16.dy),
       //Login
       // GestureDetector(
