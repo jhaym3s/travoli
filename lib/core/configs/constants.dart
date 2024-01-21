@@ -61,6 +61,7 @@ const Color kSuccess = Color(0xFF12B76A);
 const double kPaddingS = 8.0;
 const double kPaddingM = 16.0;
 const double kPaddingL = 32.0;
+const double kScreenPadding = 20;
 
 // Avatar sizes
 const double kCircleAvatarSizeRadiusAppBar = 20.0;

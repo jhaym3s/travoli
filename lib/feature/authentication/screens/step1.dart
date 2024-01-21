@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:travoli/core/configs/configs.dart';
+import 'package:travoli/core/helpers/router/router.dart';
 
 import '../../../core/components/components.dart';
-import '../../../core/helpers/router/router.dart';
+import 'step2.dart';
 
 class Step1 extends StatefulWidget {
   static const routeName = "step1";
@@ -90,9 +91,11 @@ class _Step1State extends State<Step1> {
                       ],
                     ),
                  SpaceY(48.dy),
-                 CustomElevatedButton(onPressed:(){
-                  moveToNextScreen(context: context, page: "");
-                }, buttonText: "Next Step"),
+                  CustomElevatedButton(
+                    onPressed:(){
+                    moveToNextScreen(context: context, page: Step2.routeName);
+                  }, 
+                  buttonText: "Next Step"),
             ],
             ),
           ),
