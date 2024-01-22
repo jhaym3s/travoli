@@ -5,6 +5,7 @@ import 'package:travoli/feature/authentication/screens/sign_up_screen.dart';
 import 'package:travoli/feature/authentication/screens/splash_screen.dart';
 import 'package:travoli/feature/authentication/screens/step1.dart';
 import 'package:travoli/feature/dashboard/dashbord.dart';
+import 'package:travoli/feature/dashboard/explore/screens/filter_screen.dart';
 import 'package:travoli/feature/dashboard/explore/screens/house_details.dart';
 
 import '../../../feature/authentication/screens/sign_in_screen.dart';
@@ -32,6 +33,8 @@ class AppRouter {
         return MaterialPageRoute(builder: (_) => const Step2());
         case HouseDetailScreen.routeName:
         return MaterialPageRoute(builder: (_) => const HouseDetailScreen());
+        case FilterScreen.routeName:
+        return MaterialPageRoute(builder: (_) => const FilterScreen());
       default:
         return onError();
     }

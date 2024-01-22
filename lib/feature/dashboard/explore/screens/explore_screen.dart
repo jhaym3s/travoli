@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:travoli/core/configs/configs.dart';
 import 'package:travoli/core/helpers/router/router.dart';
+import 'package:travoli/feature/dashboard/explore/screens/filter_screen.dart';
 import 'package:travoli/feature/dashboard/explore/screens/house_details.dart';
 import '../../../../core/components/components.dart';
 import '../widget/house_list_tile.dart';
@@ -24,7 +25,11 @@ class _ExploreScreenState extends State<ExploreScreen> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               SpaceY(18.dy),
-                const ExploreSearchBar(),
+                GestureDetector(
+                  onTap: () {
+                     moveFromBottomNavBarScreen(context: context, targetScreen: const FilterScreen());
+                  },
+                  child: const ExploreSearchBar()),
                 SpaceY(13.dy),
                 const Divider(
                   color:  Color(0xffE0DFDF),

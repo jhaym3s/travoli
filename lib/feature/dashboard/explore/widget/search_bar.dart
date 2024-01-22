@@ -30,7 +30,7 @@ class ExploreSearchBar extends StatelessWidget {
       color: const Color(0xffA1A1A1),
       fontFamily: kSecondaryFontFamily,
     ),
-      Image.asset(AssetsImages.listHouse,height: 16.dy, width: 16.dx,),
+      Image.asset(AssetsImages.filterIcon,height: 16.dy, width: 16.dx,),
         ],
       ),
     );

@@ -38,8 +38,8 @@ class DropDownTextFormField extends StatelessWidget {
           labelText,
           textAlign: TextAlign.center,
           style: Theme.of(context).textTheme.bodyLarge!.copyWith(
-              fontWeight: FontWeight.w400,
-              fontSize: 16.sp,
+              fontWeight: FontWeight.w700,
+              fontSize: 14.sp,
               color: const Color(0xff1C1C1E)),
         ),
         SpaceY(4.dy),

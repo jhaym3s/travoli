@@ -12,4 +12,5 @@ class AssetsImages {
   static const inactiveHistory = "assets/images/inactiveHistory.png";
   static const activeProfile = "assets/images/activeProfile.png";
   static const inactiveProfile = "assets/images/inactiveProfile.png";
+  static const filterIcon = "assets/images/search.png";
 }
