@@ -103,7 +103,7 @@ class _HouseDetailScreenState extends State<HouseDetailScreen> {
                 child: Wrap(
                   children: apartmentTypes
                       .map((e) => HouseType(
-                            houseType: e,
+                            houseDetails: e,
                           ))
                       .toList(),
                 ),
@@ -210,14 +210,14 @@ class HouseTermsButton extends StatelessWidget {
 class HouseType extends StatelessWidget {
   const HouseType({
     super.key,
-    required this.houseType,
+    required this.houseDetails,
   });
-  final String houseType;
+  final String houseDetails;
 
   @override
   Widget build(BuildContext context) {
     return CustomText(
-      text: "• $houseType ",
+      text: "• $houseDetails ",
       fontSize: 14.sp,
       fontFamily: kSecondaryFontFamily,
       fontWeight: FontWeight.w400,
