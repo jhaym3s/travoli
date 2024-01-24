@@ -10,12 +10,10 @@ class CustomPinCodeTextField extends StatelessWidget {
     required this.controller,
     required this.onSaved,
     required this.onSubmitted,
-    this.padding,
     this.isReadOnly = false,
     required this.onComplete,
     this.color = const Color(0xffF8F8FC),
   }) : super(key: key);
-  final double? padding;
   final TextEditingController controller;
   final Function(String) onComplete;
   final Function(String) onSaved;
@@ -28,7 +26,7 @@ class CustomPinCodeTextField extends StatelessWidget {
     return PinCodeTextField(
       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
       appContext: context,
-      length: 4,
+      length: 6,
       controller: controller,
       obscureText: true,
       obscuringCharacter: "-",
@@ -50,18 +48,17 @@ class CustomPinCodeTextField extends StatelessWidget {
       pinTheme: PinTheme(
         shape: PinCodeFieldShape.box,
         borderRadius: BorderRadius.circular(8),
-        fieldHeight: 70.dy,
+        fieldHeight: 48.dy,
         borderWidth: 1.dx,
         selectedFillColor: color,
-        fieldWidth: 70.dx,
+        fieldWidth: 52.dx,
         inactiveFillColor: color,
         activeFillColor: color,
         //fieldOuterPadding: EdgeInsets.symmetric(horizontal: padding != null? padding!:0),
         activeColor: kPrimaryColor,
-        inactiveColor: Color(0xffD4DAE0),
-        selectedColor: Color(0xffD4DAE0),
+        inactiveColor: Color(0xffE0DFDF),
+        selectedColor: Color(0xffE0DFDF),
       ),
-      
     );
   }
 }

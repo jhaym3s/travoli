@@ -7,7 +7,7 @@ import 'package:intl/intl.dart';
 
 // typedef ToolbarOptionModelCallback = void Function(ToolbarOptionModel sortModel);
 
-const String kCompanyName = 'VPay';
+const String kCompanyName = 'Travoli';
 const String kAppVersion = '1.0.0';
 
 /// Default theme font.  LengthLimitingTextInputFormatter(11),
@@ -17,7 +17,8 @@ const String kDummyName = "John Doe";
 const String kDummyPassword = "johndoe#123";
 const String kCurrency = '\u20A6';
 
-const String kFontFamily = "inter";
+const String kFontFamily = "Roboto";
+const String kSecondaryFontFamily = "Lato";
 
 // Date/time formats
 const String kDateFormat = 'dd/MM/yyyy';
@@ -44,9 +45,9 @@ const double kBorderRadius = 10.0;
 const double kBottomNavBarHeight = 60.0;
 
 //! Colors
-const Color kPrimaryColor = Color(0xffF90606);
-const Color lightScaffoldBackgroundColor = kWhite;
-const Color kTextColorsLight = Color(0xFF121619);
+const Color kPrimaryColor = Color(0xffF000000);
+const Color lightScaffoldBackgroundColor = Color(0xffFFFDF7);
+const Color kTextColorsLight = Color(0xFF100C08);
 const Color navBarIconsInActiveColor = Color(0xff98A2B3);
 const Color kWhite = Color(0xFFFFFFFF);
 const Color kBlack = Color(0xFF000000);
@@ -60,6 +61,7 @@ const Color kSuccess = Color(0xFF12B76A);
 const double kPaddingS = 8.0;
 const double kPaddingM = 16.0;
 const double kPaddingL = 32.0;
+const double kScreenPadding = 20;
 
 // Avatar sizes
 const double kCircleAvatarSizeRadiusAppBar = 20.0;

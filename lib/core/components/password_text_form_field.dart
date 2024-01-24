@@ -70,23 +70,27 @@ class PasswordTextFormField extends StatelessWidget {
                   ),
                 ),
             hintText: hintText,
-            hintStyle: Theme.of(context).textTheme.bodyText1!.copyWith(
+            hintStyle: Theme.of(context).textTheme.bodyMedium!.copyWith(
                 color: const Color(0xFFB7B7B9),
                 fontSize: 14.sp,
                 fontWeight: FontWeight.w400),
                 filled: true,
         fillColor:  const Color(0xffF9FAFB),
-                contentPadding: EdgeInsets.symmetric(vertical: 20.0.dy, horizontal: 10.0.dx), 
+        contentPadding: EdgeInsets.symmetric(vertical: 16.0.dy, horizontal: 10.0.dx), 
          // border: InputBorder.none, 
           focusedBorder: OutlineInputBorder(
-          borderSide: const BorderSide(color: Color(0xffD4DAE0)),
+          borderSide: const BorderSide(color: kTextColorsLight),
           borderRadius: BorderRadius.circular(8),
         ),
+        border: OutlineInputBorder(
+               borderSide: const BorderSide(color: kTextColorsLight),
+              borderRadius: BorderRadius.circular(8),
+            ),
         enabledBorder: OutlineInputBorder(
-          borderSide: const BorderSide(color: Color(0xffD4DAE0)),
+           borderSide: const BorderSide(color: Color(0xffE0DFDF)),
           borderRadius: BorderRadius.circular(8),
         ),
-           border: InputBorder.none),
+           ),
           onChanged: onChanged,
           onSaved: (newValue) {},
           validator: validator,

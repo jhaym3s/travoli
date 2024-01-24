@@ -1,18 +1,16 @@
 
 class AssetsImages {
-  static const onboarding = "assets/images/Onboarding.png";
-  static const googleLogo = "assets/images/google.png";
-  static const rider = "assets/images/rider.png";
-  static const redLocation = "assets/images/red_location.png";
-  static const deliveryCart = "assets/images/delivery_cart.png";
-  static const food = "assets/images/food.png";
-  static const check = "assets/images/check.png";
-  static const changePassword = "assets/images/change_password.png";
-  static const profile = "assets/images/profile.png";
-  static const support = "assets/images/support.png";
-  static const verifyVehicle = "assets/images/verify_vehicle.png";
-  static const about = "assets/images/about.png";
-  static const logout='assets/images/logout.png';
-  static const docs='assets/images/docs.png';
-  static const splash = "assets/images/splash.png";
+  static const onboarding1 = "assets/images/onboarding1.png";
+  static const onboarding2 = "assets/images/onboarding2.png";
+  static const rentHouse = "assets/images/rent.png";
+  static const listHouse = "assets/images/listHouse.png";
+  static const activeExplore = "assets/images/activeExplore.png";
+  static const inactiveExplore = "assets/images/inactiveExplore.png";
+  static const activeWishlist = "assets/images/activeWishlist.png";
+  static const inactiveWishlist = "assets/images/inactiveWishlist.png";
+  static const activeHistory = "assets/images/activeHistory.png";
+  static const inactiveHistory = "assets/images/inactiveHistory.png";
+  static const activeProfile = "assets/images/activeProfile.png";
+  static const inactiveProfile = "assets/images/inactiveProfile.png";
+  static const filterIcon = "assets/images/search.png";
 }

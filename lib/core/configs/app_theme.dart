@@ -8,6 +8,7 @@ class AppTheme {
   /// Constructs an [AppTheme].
   AppTheme() {
     lightTheme = ThemeData(
+      useMaterial3: true,
       fontFamily: kFontFamily,
       brightness: Brightness.light,
       textTheme: lightModeAppTextTheme(),
