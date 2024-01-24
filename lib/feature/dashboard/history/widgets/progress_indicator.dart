@@ -8,7 +8,7 @@ class CustomProgressIndicator extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 330.dx,
+      width: 10,
       height: 8.dy,
       decoration: BoxDecoration(
         //border: Border.all(color: Colors.grey),
@@ -18,7 +18,7 @@ class CustomProgressIndicator extends StatelessWidget {
       child: Stack(
         children: [
           Container(
-            width: 330.dx * progress.dx,
+            width: 10,
             height: 8.dy,
             decoration: BoxDecoration(
               color: kWarning,

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:travoli/core/configs/configs.dart';
+import 'package:travoli/feature/dashboard/history/widgets/custom_tab_bar.dart';
 import '../../../../core/components/components.dart';
 import '../widgets/history_tile.dart';
 
@@ -11,7 +12,7 @@ class HistoryScreen extends StatefulWidget {
 }
 
 class _HistoryScreenState extends State<HistoryScreen>
-    with SingleTickerProviderStateMixin {
+    with SingleTickerProviderStateMixin{
   late TabController _tabController;
   @override
   void initState() {
@@ -36,17 +37,7 @@ class _HistoryScreenState extends State<HistoryScreen>
                       fontFamily: kSecondaryFontFamily,
                     ),
             ),
-            TabBar(
-              controller: _tabController,
-              tabs: const [
-                Tab(text: 'Pending'),
-                Tab(text: 'Complete'),
-              ],
-              labelColor: kBlack,
-              indicatorColor: kBlack,
-              unselectedLabelColor: kBlack,
-              indicatorSize: TabBarIndicatorSize.tab,
-            ),
+           CustomTabBar(tabController: _tabController, label1: "Pending", label2: "Complete"),
            Expanded(
             child: TabBarView(
               controller: _tabController,

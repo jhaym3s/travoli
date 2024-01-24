@@ -16,25 +16,22 @@ class CustomTabBar extends StatelessWidget {
     return Container(
       height: 52.dy,
       decoration: BoxDecoration(
-        color: const Color(0xffF6F6F6),
+        color: kWhite,
         borderRadius: BorderRadius.circular(10.0),
       ),
       child: TabBar(
         isScrollable: false,
         controller: tabController,
-        padding: EdgeInsets.symmetric(
-            horizontal: 8.dx, vertical: 6.dy),
+         padding: EdgeInsets.symmetric(horizontal: 8.dx, vertical: 6.dy),
         indicator: BoxDecoration(
           borderRadius: BorderRadius.circular(10.0),
-          color: kWhite,
+          color: kBlack,
         ),
-        labelColor: kWarning,
-        indicatorColor: kWarning,
-        unselectedLabelColor: kWarning,
-        labelStyle: Theme.of(context)
-            .textTheme
-            .bodyMedium!
-            .copyWith(
+        labelColor: kWhite,
+        indicatorColor: kBlack,
+        unselectedLabelColor: kBlack,
+        indicatorSize: TabBarIndicatorSize.tab,
+        labelStyle: Theme.of(context).textTheme.bodyMedium!.copyWith(
                 fontWeight: FontWeight.w700,
                 fontSize: 12.sp,
                 color: const Color(0xff46531F)),

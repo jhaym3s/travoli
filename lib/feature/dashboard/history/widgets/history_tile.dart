@@ -107,7 +107,25 @@ class HistoryTile extends StatelessWidget {
     ),
                   ),
         SpaceY(8.dy),
-       const CustomProgressIndicator(progress: 0.6,) ,
+       Container(
+        margin: EdgeInsets.symmetric(horizontal: 10.dx),
+          width: 200, height: 8,
+          decoration: BoxDecoration(
+          color: kWarning,
+          borderRadius: BorderRadius.circular(10),
+               ),
+         child: Stack(
+           children: [
+             Container(
+              width: double.infinity, height: 8,
+              decoration: BoxDecoration(
+              color: kBlack,
+              borderRadius: BorderRadius.circular(10),
+                   ),
+             ),
+           ],
+         ),
+       ),
        SpaceY(10.dy),          
           ],
         ),
