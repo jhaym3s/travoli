@@ -10,12 +10,14 @@ class CustomElevatedButton extends StatefulWidget {
     this.color = kPrimaryColor,
     this.textColor = kWhite,
     this.width = 343,
+    this.height = 48,
   }) : super(key: key);
   final Function()? onPressed;
   final String buttonText;
   final Color color;
   final Color textColor;
   final double? width;
+  final double? height;
 
   @override
   State<CustomElevatedButton> createState() => _CustomElevatedButtonState();
@@ -28,7 +30,7 @@ class _CustomElevatedButtonState extends State<CustomElevatedButton> {
       alignment: Alignment.center,
       child: SizedBox(
         width: widget.width!.dx,
-        height: 48.dy,
+        height: widget.height!.dy,
         child: ElevatedButton(
           onPressed: widget.onPressed,
           style: ButtonStyle(

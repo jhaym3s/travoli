@@ -37,7 +37,7 @@ class _HistoryScreenState extends State<HistoryScreen>
                       fontFamily: kSecondaryFontFamily,
                     ),
             ),
-           CustomTabBar(tabController: _tabController, label1: "Pending", label2: "Complete"),
+           CustomTabBar(tabController: _tabController, label1: "Pending",  label2: "Complete"),
            Expanded(
             child: TabBarView(
               controller: _tabController,
@@ -46,7 +46,7 @@ class _HistoryScreenState extends State<HistoryScreen>
                ListView.builder(
                          padding: EdgeInsets.symmetric(horizontal: kScreenPadding.dx, vertical: 24.dy),
                          itemBuilder: (context,index){
-                         return const HistoryTile();
+                         return const PendingHistoryTile();
                        }),
             ListView.builder(
                       padding: EdgeInsets.symmetric(horizontal: kScreenPadding.dx,vertical: 24.dy),
