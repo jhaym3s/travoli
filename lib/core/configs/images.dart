@@ -13,4 +13,8 @@ class AssetsImages {
   static const activeProfile = "assets/images/activeProfile.png";
   static const inactiveProfile = "assets/images/inactiveProfile.png";
   static const filterIcon = "assets/images/search.png";
+  static const profileAdd = "assets/images/profile_add.png";
+  static const notification = "assets/images/notification.png";
+  static const security = "assets/images/security.png";
+  static const helpCenter = "assets/images/help_center.png";
 }

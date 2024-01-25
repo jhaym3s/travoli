@@ -177,7 +177,6 @@ class HouseTermsButton extends StatelessWidget {
   const HouseTermsButton({
     super.key,
   });
-
   @override
   Widget build(BuildContext context) {
     return Container(
