@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../../../core/components/components.dart';
 import '../../../../core/configs/configs.dart';
-import '../../explore/widget/house_list_tile.dart';
+import '../../explore/widget/wish_list_tile.dart';
 
 class WishlistScreen extends StatefulWidget {
   const WishlistScreen({super.key});
@@ -35,7 +35,7 @@ class _WishlistScreenState extends State<WishlistScreen> {
               child: ListView.builder(
                         padding: EdgeInsets.symmetric(horizontal: kScreenPadding.dx),
                         itemBuilder: (context,index){
-                        return const HouseListTile(containerWidth: double.infinity,);
+                        return const WishlistTile(containerWidth: double.infinity,);
                       }),
             )
           ],

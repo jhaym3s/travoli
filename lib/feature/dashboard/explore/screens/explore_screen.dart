@@ -4,7 +4,7 @@ import 'package:travoli/core/helpers/router/router.dart';
 import 'package:travoli/feature/dashboard/explore/screens/filter_screen.dart';
 import 'package:travoli/feature/dashboard/explore/screens/house_details.dart';
 import '../../../../core/components/components.dart';
-import '../widget/house_list_tile.dart';
+import '../widget/wish_list_tile.dart';
 import '../widget/search_bar.dart';
 
 class ExploreScreen extends StatefulWidget {
@@ -67,7 +67,7 @@ class _ExploreScreenState extends State<ExploreScreen> {
                     onTap: () {
                       moveFromBottomNavBarScreen(context: context, targetScreen: const HouseDetailScreen());
                     },
-                    child: HouseListTile(containerWidth: 202.dx,));
+                    child: WishlistTile(containerWidth: 202.dx,));
                 }),
               ),
                SpaceY(16.dy),
@@ -96,7 +96,7 @@ class _ExploreScreenState extends State<ExploreScreen> {
                   child: ListView.builder(
                     padding: EdgeInsets.symmetric(horizontal: kScreenPadding.dx),
                     itemBuilder: (context,index){
-                    return const HouseListTile(containerWidth: double.infinity,);
+                    return const WishlistTile(containerWidth: double.infinity,);
                   }),
                 ),
             ],

@@ -88,7 +88,7 @@ class HistoryTile extends StatelessWidget {
                   Padding(
     padding:  EdgeInsets.symmetric(horizontal: 10.dx),
     child: CustomText(
-      text:"Abuja.",
+      text:"Abuja",
       overflow: TextOverflow.ellipsis,
       fontSize: 14.sp,
       fontWeight: FontWeight.w400,
@@ -230,7 +230,7 @@ class PendingHistoryTile extends StatelessWidget {
        Padding(
     padding:  EdgeInsets.symmetric(horizontal: 10.dx),
     child: CustomText(
-      text:"40% completed (Due date: 20th Decemeber)",
+      text:"40% completed (Due date: 20th December, 2024)",
       overflow: TextOverflow.ellipsis,
       fontSize: 12.sp,
       fontWeight: FontWeight.w400,

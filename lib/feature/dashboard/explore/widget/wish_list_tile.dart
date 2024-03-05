@@ -3,8 +3,8 @@ import 'package:travoli/core/configs/configs.dart';
 
 import '../../../../core/components/components.dart';
 
-class HouseListTile extends StatelessWidget {
-  const HouseListTile({
+class WishlistTile extends StatelessWidget {
+  const WishlistTile({
     super.key, required this.containerWidth
   });
   final double containerWidth;
