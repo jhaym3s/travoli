@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'core/configs/configs.dart';
 import 'core/helpers/router/app_route.dart';
+import 'feature/authentication/screens/onboarding_screen.dart';
 import 'feature/authentication/screens/splash_screen.dart';
 
 void main() {
@@ -22,7 +23,7 @@ class MyApp extends StatelessWidget {
             Dims.setSize(media);
             return widget!;
           },
-      home: const SplashScreen(),
+      home: const OnBoardingScreen(),
     );
   }
 }
